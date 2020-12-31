@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 30vh;
+}
+.checkoutdiv{
+    /* border:2px solid red; */
+    margin-top: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Montserrat;
+    padding: 2%;
+    box-shadow: 0px 0px 7px -4px rgba(0,0,0,0.75);
+    letter-spacing: 1.7px;
+
+}
+.checkoutdiv h1{
+    margin: 3%;
+    white-space: nowrap;
+    margin-top: 5%;
+    color: rgb(105, 243, 13);
+}
+.orderid{
+    color: rgb(245, 35, 210);
+}
+.checkoutdiv p{
+    /* margin: 3%; */
+    white-space: nowrap;
+    font-size: 18px;
+    color: rgb(112, 92, 201);
+    margin-top: 2%;
+}
+
+.contniueshopping{
+    border: 1px solid rgb(0, 255, 234);
+    padding: 0.6% 1%;
+    color: green;
+    cursor: pointer;
+    margin-top: 2%;
+    border-radius: 8px;
+    outline: none;
+    font-family: Montserrat;
+    background-color: aliceblue;
+    font-size: 10px;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 568px) {
+
+    .checkoutdiv{
+        /* border:2px solid red; */
+    margin-top: 0%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: Montserrat;
+        padding: 2%;
+        box-shadow: 0px 0px 5px -3px rgba(0,0,0,0.75);
+        letter-spacing: 1.7px;
+    
+    }
+    .checkoutdiv h1{
+        margin: 3%;
+        white-space: nowrap;
+        font-size: 16px;
+        margin-top: 5%;
+    }
+    .checkoutdiv p{
+        /* margin: 3%; */
+        white-space: nowrap;
+        font-size: 10px;
+        margin-top: 2%;
+    }
+    .contniueshopping{
+        border: 1px solid rgb(0, 255, 234);
+        padding: 0.6% 1%;
+        color: green;
+        cursor: pointer;
+        margin-top: 4%;
+        border-radius: 3px;
+        outline: none;
+        font-family: Montserrat;
+        background-color: aliceblue;
+        font-size: 5px;
+        letter-spacing: 1.4px;
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+         -khtml-user-select: none; /* Konqueror HTML */
+           -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+                user-select: none; /* Non-prefixed version, currently
+                                      supported by Chrome and Opera */
+    }
+    
+    
+    
+
+
+
+
+}

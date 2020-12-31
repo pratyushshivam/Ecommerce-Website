@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+
+.abouts{
+    font-size: Montserrat;
+    /* border:2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 7px -4px rgba(0,0,0,0.75);
+
+    width: 50%;
+    margin: auto;
+    padding: 1% 2%;
+    margin-bottom: 1% ;
+    margin: auto;
+    margin-bottom: 1% ;
+    margin-top: 1% ;
+
+}
+.aboutheader{
+    font-size: 21px;
+    font-weight: 600;
+    color: purple;
+    padding-bottom: 2%;
+    
+}
+
+
+.mainh1for{
+    /* border:2px solid red; */
+    text-align: center;
+    font-size: Montserrat;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    font-size: 28px;
+    letter-spacing: 2px;
+    color: rgb(223, 139, 29);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 568px) {
+
+    .abouts{
+        font-size: Montserrat;
+        /* border:2px solid red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+        padding: 1% 2%;
+        margin-bottom: 1% ;
+        margin: auto;
+        margin-bottom: 7% ;
+        margin-top: 7% ;
+    
+    }
+    .aboutheader{
+        font-size: 18px;
+        font-weight: 600;
+        color: purple;
+        padding-bottom: 2%;
+        
+    }
+    .aboutheader{
+        font-size: 16px;
+        font-weight: 600;
+        color: purple;
+        padding-bottom: 2%;
+        
+    }
+    .abouts p{
+        font-size: 10px;
+        text-align: left;
+    }
+    .mainh1for{
+        /* border:2px solid red; */
+        text-align: center;
+        font-size: Montserrat;
+        margin-bottom: 3%;
+        margin-top: 3%;
+        font-size: 24px;
+        letter-spacing: 2px;
+        color: rgb(223, 139, 29);
+    
+    }
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+}

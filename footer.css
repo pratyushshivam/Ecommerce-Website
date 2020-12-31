@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+
+.footer {
+    background-color: #64467b;
+    padding: 6rem 1rem;
+    line-height: 3rem;
+    font-family: Montserrat !important;
+}
+
+.footer-top__box h3 {
+    font-size: 1.9rem;
+    letter-spacing: 1.4px;
+    font-weight: 400;
+    color: #e2b45d;
+    margin-bottom: 1rem;
+}
+.footer-top__box a{
+    /* border:2px solid red; */
+    font-size: 1.7rem !important;
+    letter-spacing: 1.8px;
+}
+.footer-top__box span{
+    /* border:2px solid red; */
+}
+.span__main{
+    /* border:2px solid red; */
+    font-size: 1.7rem !important;
+    letter-spacing: 1.8px;
+
+}

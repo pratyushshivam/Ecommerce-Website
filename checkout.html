@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="checkout.css">
+       <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer.css">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+<body>
+ <header id="header" class="header">
+        <div class="navigation">
+          <div class="contaidner">
+            <nav class="nav">
+              <div class="nav__hamburger">
+                <svg>
+                  <use xlink:href="./images/sprite.svg#icon-menu"></use>
+                </svg>
+              </div>
+    
+              <div class="nav__logo">
+                <a href="/" class="scroll-link">
+                  Ecommerce Project
+                </a>
+              </div>
+    
+              <div class="nav__menu">
+                <div class="menu__top">
+                  <span class="nav__category">Demo Project</span>
+                  <a href="#" class="close__toggle">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+                      <metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+                      <g><g transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)"><path d="M9227.2,4895.6c-135.1-47.1-31.4,50.3-2541.1-2418.6C5756.3,1559.7,4983.6,809,4967.9,802.8c-15.7-6.3-914.1,863.8-1994.6,1931.8C1889.6,3802.5,950.5,4707.1,887.7,4744.8c-298.4,185.3-709.9-3.1-775.8-358.1C64.7,4135.4,55.3,4144.8,2203.8,2034C3309.4,950.4,4214,61.4,4214,55.2c0-3.1-857.5-848.1-1906.6-1878.3C1255.2-2853.5,359.9-3748.7,309.7-3811.5c-109.9-147.6-119.4-402.1-18.9-565.4c128.8-207.3,461.7-292.1,678.5-172.8c56.5,28.3,785.3,725.6,1617.6,1545.4c835.5,819.8,1711.9,1680.5,1947.5,1909.8l427.2,420.9l1994.6-1963.2C8052.4-3717.2,8994.8-4625,9051.3-4653.3c113.1-59.7,323.5-69.1,439.7-18.8c260.7,106.8,383.2,408.3,270.1,672.2c-25.1,59.7-829.2,873.2-2057.4,2079.4L5690.4,58.3l116.2,113.1c932.9,892.1,4014.3,3957.7,4048.8,4020.6c69.1,135.1,56.6,376.9-28.3,499.4C9698.3,4889.3,9443.9,4974.1,9227.2,4895.6z"/></g></g>
+                      </svg>
+                  </a>
+                </div>
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a href="/index.html" class="nav__link scroll-link">Home</a>
+                  </li>
+                  <li class="nav__item">
+                    <a onclick="functionfornext()" href="/public/product.html" class="nav__link scroll-link">Products</a>
+                  </li>
+                  <li class="nav__item">
+                    <a onclick="functionfornextcheckout()" href="/checkout.html" class="nav__link scroll-link">Cart</a>
+                  </li>
+                  <li class="nav__item">
+                    <a  onclick="functionfornextcontact()"  href="/contact.html" class="nav__link scroll-link">Contact</a>
+                  </li>
+                  <li class="nav__item">
+                    <a  onclick="functionfornextabout()"  href="/about.html" class="nav__link scroll-link">About</a>
+                  </li>
+                </ul>
+                <script>
+                  function functionfornext(){
+                    window.location.href = "product.html";
+                   
+
+                  }
+                  function functionfornextcontact(){
+                    window.location.href = "contact.html";
+
+
+                  }
+                  function functionfornextabout(){
+                    window.location.href = "about.html";
+
+
+                  }
+                  function functionfornextcheckout(){
+                    window.location.href = "checkout.html";
+
+
+                  }
+                </script>
+              </div>
+           
+    
+       
+         
+            </nav>
+          </div>
+        </div>
+      </header>
+    <div class="checkoutmain">
+        <div class="checkoutmain__shoppingcart">
+            <h1 class="checkoutmain__shoppingcart__heading">Shopping Cart</h1>
+            <p class="checkoutmain__shoppingcart__slag">Store &nbsp; / &nbsp; Shopping Cart</p>
+            <p class="checkoutmain__shoppingcart__slag">Total number of items in cart :  <span class="cartitemsmain"></span> </p>
+
+            <div class="objectJsondisplayCONTROL">
+              <div class="objectdisplay">
+                
+            </div>
+            <div class="objectpricedisplay">
+                
+            </div>
+            </div>
+            <div class="checkoutmain__shoppingcart__subtotal">
+                <div class="checkoutmain__shoppingcart__subtotal__first checkoutmain__shoppingcart__subtotal_">
+                    <h1>Subtotal</h1>
+                    <h1 class="mainproducttotal">344</h1>
+                </div>
+                <div class="checkoutmain__shoppingcart__subtotal__second checkoutmain__shoppingcart__subtotal_ ">
+                    <h1>Discount</h1>
+                    <h1 class="discountControl">-30</h1>
+                </div>
+                <div class="checkoutmain__shoppingcart__subtotal__third checkoutmain__shoppingcart__subtotal_">
+                    <h1>Shipping </h1>
+                    <h1 class="">Free</h1>
+                </div>
+                <div class="checkoutmain__shoppingcart__subtotal__total checkoutmain__shoppingcart__subtotal_">
+                    <h1 class="totalControls">TOTAL </h1>
+                    <h1 class="totalControl">343</h1>
+                </div>
+            </div>
+            <div class="promodiv">
+                <div class="checkoutmain__shoppingcart__promo">
+                    <h1>Have a promo code? <span>Redeem your coupon</span> </h1>
+                </div> 
+                <div class="checkoutmain__shoppingcart__promo">
+                    <h1>Missing a product? <span>Continue shopping</span> </h1>
+                </div>  
+
+            </div>
+                    
+        </div>
+     
+        <div class="checkoutmain__checkout">
+            <div class="checkoutmain__checkout__header">
+                <h1>Checkout</h1>
+                <p>Enter your email address. This address will be used to send you order updates</p>
+            </div>
+            <div class="checkoutmain__checkout__input">
+                <input placeholder="Enter your Email" type="text">
+            </div>
+            <div class="checkoutmain__checkout__checkbox">
+                <input type="checkbox" name="" id="">
+                <p>I agree with Terms and Conditions</p>
+            </div>
+            <div class="checkoutmain__checkout__address">
+                <h1>Address</h1>
+            </div>
+            <div class="checkoutmain__checkout__input addressinput">
+                <textarea class="addresscheckControl" placeholder="Address Line 1" type="text"></textarea>
+            </div>
+            <div class="checkoutmain__checkout__input addressinput">
+                <textarea class="addresscheckControl2"  placeholder="Address Line 2" type="text" ></textarea>
+            </div>
+            <div class="checkoutmain__checkout__address anotherinput">
+                <h1>Enter your Phone Number</h1>
+            </div>
+            <div class="checkoutmain__checkout__input">
+                <input class="maindivun phonenumber__check" placeholder="Enter your Phone Number" type="number" >
+            </div>
+            <div class="buttonsubmit">
+                <button onclick="thankyou()" class="finalcheckoutbutton">Place order</button>
+            </div>
+      
+        
+
+
+           
+
+        </div>
+    </div>
+      <footer id="footer" class="section footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer-top__box">
+          <h3>EXTRAS</h3>
+          <a href="#">Brands</a>
+          <a href="#">Gift Certificates</a>
+          <a href="#">Affiliate</a>
+          <a href="#">Specials</a>
+          <a href="#">Site Map</a>
+        </div>
+        <div class="footer-top__box">
+          <h3>INFORMATION</h3>
+          <a href="#">About Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Site Map</a>
+        </div>
+        <div class="footer-top__box">
+          <h3>MY ACCOUNT</h3>
+          <a href="#">My Account</a>
+          <a href="#">Order History</a>
+          <a href="#">Wish List</a>
+          <a href="#">Newsletter</a>
+          <a href="#">Returns</a>
+        </div>
+        <div class="footer-top__box">
+          <h3>CONTACT US</h3>
+          <div>
+            <span>
+              <svg>
+                <use xlink:href="./images/sprite.svg#icon-location"></use>
+              </svg>
+            </span>
+            <span class="span__main">505 Sector 3, Location 1, Location 2</span>
+          </div>
+          <div>
+            <span>
+              <svg>
+                <use xlink:href="./images/sprite.svg#icon-envelop"></use>
+              </svg>
+            </span>
+           <span class="span__main"> company@gmail.com</span>
+          </div>
+          <div>
+            <span>
+              <svg>
+                <use xlink:href="./images/sprite.svg#icon-phone"></use>
+              </svg>
+            </span>
+            <span class="span__main">1111111111</span>
+          </div>
+          <div>
+            <span>
+              <svg>
+                <use xlink:href="./images/sprite.svg#icon-paperplane"></use>
+              </svg>
+            </span>
+            <span class="span__main">City, Country</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer-bottom__box">
+
+      </div>
+      <div class="footer-bottom__box">
+
+      </div>
+    </div>
+    </div>
+  </footer>
+  <script src="./checkout.js"></script>
+
+    
+</body>
+</html>

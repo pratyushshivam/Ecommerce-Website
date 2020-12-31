@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="footer.css" />
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  <title>Ecommerce Project</title>
+</head>
+
+<body>
+
+  <header id="header" class="header">
+    <div class="navigation">
+      <div class="contaidner">
+        <nav class="nav">
+          <div class="nav__hamburger">
+            <svg>
+              <use xlink:href="./images/sprite.svg#icon-menu"></use>
+            </svg>
+          </div>
+
+          <div class="nav__logo">
+            <a href="/" class="scroll-link">
+              Ecommerce Project
+            </a>
+          </div>
+
+          <div class="nav__menu">
+            <div class="menu__top">
+              <span class="nav__category">Demo Project</span>
+              <a href="#" class="close__toggle">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+                  <metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+                  <g><g transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)"><path d="M9227.2,4895.6c-135.1-47.1-31.4,50.3-2541.1-2418.6C5756.3,1559.7,4983.6,809,4967.9,802.8c-15.7-6.3-914.1,863.8-1994.6,1931.8C1889.6,3802.5,950.5,4707.1,887.7,4744.8c-298.4,185.3-709.9-3.1-775.8-358.1C64.7,4135.4,55.3,4144.8,2203.8,2034C3309.4,950.4,4214,61.4,4214,55.2c0-3.1-857.5-848.1-1906.6-1878.3C1255.2-2853.5,359.9-3748.7,309.7-3811.5c-109.9-147.6-119.4-402.1-18.9-565.4c128.8-207.3,461.7-292.1,678.5-172.8c56.5,28.3,785.3,725.6,1617.6,1545.4c835.5,819.8,1711.9,1680.5,1947.5,1909.8l427.2,420.9l1994.6-1963.2C8052.4-3717.2,8994.8-4625,9051.3-4653.3c113.1-59.7,323.5-69.1,439.7-18.8c260.7,106.8,383.2,408.3,270.1,672.2c-25.1,59.7-829.2,873.2-2057.4,2079.4L5690.4,58.3l116.2,113.1c932.9,892.1,4014.3,3957.7,4048.8,4020.6c69.1,135.1,56.6,376.9-28.3,499.4C9698.3,4889.3,9443.9,4974.1,9227.2,4895.6z"/></g></g>
+                  </svg>
+              </a>
+            </div>
+              <ul class="nav__list">
+                  <li class="nav__item">
+                    <a href="/index.html" class="nav__link scroll-link">Home</a>
+                  </li>
+                  <li class="nav__item">
+                    <a onclick="functionfornext()" href="/public/product.html" class="nav__link scroll-link">Products</a>
+                  </li>
+                  <li class="nav__item">
+                    <a onclick="functionfornextcheckout()" href="/checkout.html" class="nav__link scroll-link">Cart</a>
+                  </li>
+                  <li class="nav__item">
+                    <a  onclick="functionfornextcontact()"  href="/contact.html" class="nav__link scroll-link">Contact</a>
+                  </li>
+                  <li class="nav__item">
+                    <a  onclick="functionfornextabout()"  href="/about.html" class="nav__link scroll-link">About</a>
+                  </li>
+                </ul>
+                <script>
+                  function functionfornext(){
+                    window.location.href = "product.html";
+                   
+
+                  }
+                  function functionfornextcontact(){
+                    window.location.href = "contact.html";
+
+
+                  }
+                  function functionfornextabout(){
+                    window.location.href = "about.html";
+
+
+                  }
+                  function functionfornextcheckout(){
+                    window.location.href = "checkout.html";
+
+
+                  }
+                </script>
+          </div>
+       
+
+   
+     
+        </nav>
+      </div>
+    </div>
+    <div class="hero">
+      <div class="glide" id="glide_1">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <div class="hero__center">
+                <div class="hero__left">
+                  <span class="">Most Affordable Products for 2020</span>
+                  <h1 class="">NOW THE DELIVERY IS EVEN MORE QUICKER</h1>
+                  
+                  <a href="#"><button class="hero__btn">SHOP NOW</button></a>
+                </div>
+               
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="hero__center">
+                <div class="hero__left">
+                  <span>Stay tuned for festive discounts </span>
+                  <h1>GET PRODUCTS AT THE CHEAPEST RATE</h1>
+                  <!-- <p>Trending from mobile and headphone style collection</p> -->
+                  <a href="#"><button class="hero__btn">SHOP NOW</button></a>
+                </div>
+               
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+          <button class="glide__bullet" data-glide-dir="=0"></button>
+          <button class="glide__bullet" data-glide-dir="=1"></button>
+        </div>
+
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+            <svg>
+              <use xlink:href="./images/sprite.svg#icon-arrow-left2"></use>
+            </svg>
+          </button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+            <svg>
+              <use xlink:href="./images/sprite.svg#icon-arrow-right2"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="section__category">
+    <div class="section__category__header">
+      <h1>Shop by Category</h1>
+    </div>
+
+      <section id="collection" class="section collection">
+        <div class="collection__container" data-aos="fade-up" data-aos-duration="1200">
+          <div class="collection__box">
+            <div class="img__container">
+              <img class="collection_02" src="https://images.pexels.com/photos/965324/pexels-photo-965324.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+            </div>
+            <div class="collection__content">
+              <div class="collection__data">
+                <span>Women Footwears</span>
+                <h1>CASUAL SHOES</h1>
+                <a href="#shop">SHOP NOW</a>
+              </div>
+            </div>
+          </div>
+          <div class="collection__box">
+            <div class="img__container">
+              <img class="collection_01" src="https://images.pexels.com/photos/3380158/pexels-photo-3380158.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
+            </div>
+            <div class="collection__content">
+              <div class="collection__data">
+                <span>Electronic Gadgets</span>
+                <h1>WATCHES</h1>
+                <a href="#">SHOP NOW</a>
+              </div>
+            </div>
+          </div>
+          </div>
+
+
+        
+          
+      </section>
+      
+      <section  id="collection" class="section collection collection__main">
+        <div class="collection__container" data-aos="fade-up" data-aos-duration="1200">
+          <div class="collection__box">
+            <div class="img__container">
+              <img class="collection_02" src="https://images.pexels.com/photos/5082986/pexels-photo-5082986.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+            </div>
+            <div class="collection__content collectioncontent">
+              <div class="collection__data">
+                <span>Women Footwears</span>
+                <h1>FORMAL SHIRT</h1>
+                <a href="#shop">SHOP NOW</a>
+              </div>
+            </div>
+          </div>
+          <div class="collection__box">
+            <div class="img__container imgcontainer">
+              <img class="collection_01" src="https://images.pexels.com/photos/2723623/pexels-photo-2723623.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+            </div>
+            <div class="collection__content collectioncontent">
+              <div class="collection__data">
+                <span>Indian Wear Fusion</span>
+                <h1>ETHNIC</h1>
+                <a href="#">SHOP NOW</a>
+              </div>
+            </div>
+          </div>
+          </div>
+
+
+        
+          
+      </section>
+      
+      
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+  <main id="main">
+    <div class="container">
+  
+      <div class="section__category__header header__deals">
+        <h1>Deals of the Day</h1>
+      </div>
+   
+      <section class="section section__box latest__products" id="latest">
+        
+        <div class="container" data-aos="fade-up" data-aos-duration="1200">
+          <div class="glide" id="glide_2">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides latest-center">
+                <li class="glide__slide">
+                  <div class="product">
+                    <div onclick="productControl(26)" class="product__header">
+                      <img class="productimage__26" src="https://images.pexels.com/photos/4348403/pexels-photo-4348403.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="product">
+                    </div>
+                    <div class="product__footer">
+                      <h3 class="mainname__26" >Apple MacBook Pro</h3>
+                      <div class="rating">
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
+                        </svg>
+                      </div>
+                      <div class="product__price">
+                        ₹<h4 class="mainh3__26">175999</h4>
+                      </div>
+                      <div onclick="function__for__cart(26)"  class="background__dark product__btn">Add To Cart</div>
+                    </div>
+                    
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <div class="product">
+                    <div  onclick="productControl(27)" class="product__header">
+                      <img class="productimage__27" src="https://images.pexels.com/photos/5054541/pexels-photo-5054541.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="product">
+                    </div>
+                    <div class="product__footer">
+                      <h3  class="mainname__27">Apple Watch Series</h3>
+                      <div class="rating">
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
+                        </svg>
+                      </div>
+                      <div class="product__price">
+                        ₹<h4 class="mainh3__27" >40999</h4>
+                      </div>
+                      <div onclick="function__for__cart(27)"  class=" background__dark product__btn">Add To Cart</div>
+                    </div>
+                    
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <div class="product">
+                    <div  onclick="productControl(28)" class="product__header">
+                      <img class="productimage__28" src="https://images.pexels.com/photos/3738087/pexels-photo-3738087.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                    </div>
+                    <div class="product__footer">
+                      <h3  class="mainname__28" >Usha Sew Machine</h3>
+                      <div class="rating">
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
+                        </svg>
+                      </div>
+                      <div class="product__price">
+                        ₹<h4 class="mainh3__28" >9499</h4>
+                      </div>
+                      <div onclick="function__for__cart(28)"  class=" background__dark product__btn">Add To Cart</div>
+                    </div>
+                    
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <div class="product">
+                    <div  onclick="productControl(29)" class="product__header">
+                      <img class="productimage__29" src="https://images.pexels.com/photos/707579/pexels-photo-707579.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                    </div>
+                    <div class="product__footer">
+                      <h3  class="mainname__29" >Basics Lamp</h3>
+                      <div class="rating">
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
+                        </svg>
+                      </div>
+                      <div class="product__price">
+                        ₹<h4 class="mainh3__29" >850</h4>
+                      </div>
+                      <div onclick="function__for__cart(29)"  class=" background__dark product__btn">Add To Cart</div>
+                    </div>
+                    
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <div class="product">
+                    <div  onclick="productControl(30)" class="product__header">
+                      <img class="productimage__30" src="https://images.pexels.com/photos/2378138/pexels-photo-2378138.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="product">
+                    </div>
+                    <div class="product__footer">
+                      <h3  class="mainname__30" >Apple iPhone 6 </h3>
+                      <div class="rating">
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
+                        </svg>
+                      </div>
+                      <div class="product__price">
+                        ₹<h4 class="mainh3__30" >11999</h4>
+                      </div>
+                      <div onclick="function__for__cart(30)"  class=" background__dark product__btn">Add To Cart</div>
+                    </div>
+                    
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <div class="product">
+                    <div  onclick="productControl(31)" class="product__header">
+                      <img class="productimage__31" src="https://images.pexels.com/photos/2932748/pexels-photo-2932748.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="product">
+                    </div>
+                    <div class="product__footer">
+                      <h3  class="mainname__31" >Boat Kontez Series</h3>
+                      <div class="rating">
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
+                        </svg>
+                      </div>
+                      <div class="product__price">
+                        ₹<h4 class="mainh3__31" >5699</h4>
+                      </div>
+                      <div onclick="function__for__cart(31)"  class=" background__dark product__btn">Add To Cart</div>
+                    </div>
+                    
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <div class="product">
+                    <div  onclick="productControl(32)" class="product__header">
+                      <img class="productimage__32" src="https://images.pexels.com/photos/4046419/pexels-photo-4046419.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="product">
+                    </div>
+                    <div class="product__footer">
+                      <h3  class="mainname__32" >Kao Sofina Beaute</h3>
+                      <div class="rating">
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
+                        </svg>
+                      </div>
+                      <div class="product__price">
+                        ₹<h4 class="mainh3__32" >19599</h4>
+                      </div>
+                      <div onclick="function__for__cart(32)"  class="  background__dark product__btn">Add To Cart</div>
+                    </div>
+                    
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <div class="product">
+                    <div  onclick="productControl(33)" class="product__header">
+                      <img class="productimage__33" src="https://images.pexels.com/photos/3993471/pexels-photo-3993471.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="product">
+                    </div>
+                    <div class="product__footer">
+                      <h3  class="mainname__33" >Dyson Hair Dryer</h3>
+                      <div class="rating">
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                      </div>
+                      <div class="product__price">
+                        ₹<h4 class="mainh3__33" >12999</h4>
+                      </div>
+                      <div onclick="function__for__cart(33)"  class=" background__dark product__btn">Add To Cart</div>
+                    </div>
+                    
+                  </div>
+                </li>
+                <li  class="glide__slide">
+                  <div class="product">
+                    <div  onclick="productControl(34)" class="product__header">
+                      <img class="productimage__34" src="https://images.pexels.com/photos/747470/pexels-photo-747470.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="product">
+                    </div>
+                    <div class="product__footer">
+                      <h3  class="mainname__34" >Monte Carlo Jacket</h3>
+                      <div class="rating">
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
+                        </svg>
+                      </div>
+                      <div class="product__price">
+                        ₹<h4 class="mainh3__34" >9899</h4>
+                      </div>
+                     <div onclick="function__for__cart(34)"  class="background__dark product__btn">Add To Cart</div>
+                    </div>
+                    
+                  </div>
+
+              </ul>
+            </div>
+
+   
+          </div>
+        </div>
+      </section>
+ 
+      
+
+      <section class="category__section section" id="category">
+      
+        <div class="tab__list">
+         
+        
+          <div class="title__container tabs__filter tabs">
+       
+         
+            <div class="section__titles category__titles ">
+              <div class="section__title filter-btn active" data-id="All Products">
+                <span class="dot"></span>
+                <h1 class="primary__title">All Products</h1>
+              </div>
+            </div>
+            <div class="section__titles">
+              <div class="section__title filter-btn" data-id="Trending Products">
+                <span class="dot"></span>
+                <h1 class="primary__title">Trending Products</h1>
+              </div>
+            </div>
+
+            <div class="section__titles">
+              <div class="section__title filter-btn" data-id="Special Products">
+                <span class="dot"></span>
+                <h1 class="primary__title">Special Products</h1>
+              </div>
+            </div>
+
+            <div class="section__titles section__up">
+              <div class="section__title filter-btn" data-id="Featured Products">
+                <span class="dot"></span>
+                <h1 class="primary__title">Featured Products</h1>
+              </div>
+            </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="category__container" data-aos="fade-up" data-aos-duration="1200">
+          <div class="category__center"></div>
+        </div>
+    
+    </section>
+    
+<div onclick="functionRedirect()" class="checkout">
+  <h1>PROCEED TO CHECKOUT</h1>
+</div>
+
+
+ <footer id="footer" class="section footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer-top__box">
+          <h3>EXTRAS</h3>
+          <a href="#">Brands</a>
+          <a href="#">Gift Certificates</a>
+          <a href="#">Affiliate</a>
+          <a href="#">Specials</a>
+          <a href="#">Site Map</a>
+        </div>
+        <div class="footer-top__box">
+          <h3>INFORMATION</h3>
+          <a href="#">About Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Site Map</a>
+        </div>
+        <div class="footer-top__box">
+          <h3>MY ACCOUNT</h3>
+          <a href="#">My Account</a>
+          <a href="#">Order History</a>
+          <a href="#">Wish List</a>
+          <a href="#">Newsletter</a>
+          <a href="#">Returns</a>
+        </div>
+        <div class="footer-top__box">
+          <h3>CONTACT US</h3>
+          <div>
+            <span>
+              <svg>
+                <use xlink:href="./images/sprite.svg#icon-location"></use>
+              </svg>
+            </span>
+            <span class="span__main">Location 1, Location 2</span>
+          </div>
+          <div>
+            <span>
+              <svg>
+                <use xlink:href="./images/sprite.svg#icon-envelop"></use>
+              </svg>
+            </span>
+           <span class="span__main"> company@gmail.com</span>
+          </div>
+          <div>
+            <span>
+              <svg>
+                <use xlink:href="./images/sprite.svg#icon-phone"></use>
+              </svg>
+            </span>
+            <span class="span__main">1111111111</span>
+          </div>
+          <div>
+            <span>
+              <svg>
+                <use xlink:href="./images/sprite.svg#icon-paperplane"></use>
+              </svg>
+            </span>
+            <span class="span__main">City, Country</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer-bottom__box">
+
+      </div>
+      <div class="footer-bottom__box">
+
+      </div>
+    </div>
+    </div>
+  </footer>
+    <a href="#header" class="goto-top scroll-link">
+    <svg>
+      <use xlink:href="./images/sprite.svg#icon-arrow-up"></use>
+    </svg>
+  </a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./js/products.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/slider.js"></script>
+
+</body>
+
+</html>
